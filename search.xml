@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>theme 主題安裝--NexT</title>
+    <url>/nextBlog/2024/05/28/hello-world/</url>
+    <content><![CDATA[<p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure>
+
+<p>透過npm安裝next。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>到_config.yml裡搜尋theme修改成next</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自訂樣式</title>
+    <url>/nextBlog/2024/05/28/style/</url>
+    <content><![CDATA[<h4 id="步驟一-到-hexo-theme-next-config-yml-搜尋-Custom-file-path，將custom-file-path-的-style-註解解開"><a href="#步驟一-到-hexo-theme-next-config-yml-搜尋-Custom-file-path，將custom-file-path-的-style-註解解開" class="headerlink" title="步驟一 到 hexo-theme-next&#x2F;_config.yml 搜尋 Custom_file_path，將custom_file_path 的 style 註解解開"></a>步驟一 到 hexo-theme-next&#x2F;_config.yml 搜尋 Custom_file_path，將custom_file_path 的 style 註解解開</h4><figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="section"># Define custom file paths.</span></span><br><span class="line"><span class="section"># Create your custom files in site directory `source/<span class="emphasis">_data` and uncomment needed files below.</span></span></span><br><span class="line"><span class="emphasis"><span class="section">custom_</span>file<span class="emphasis">_path:</span></span></span><br><span class="line"><span class="emphasis"><span class="section">  #head: source/_</span>data/head.njk</span></span><br><span class="line">  #header: source/<span class="emphasis">_data/header.njk</span></span><br><span class="line"><span class="emphasis">  #sidebar: source/_</span>data/sidebar.njk</span><br><span class="line">  #postMeta: source/<span class="emphasis">_data/post-meta.njk</span></span><br><span class="line"><span class="emphasis">  #postBodyStart: source/_</span>data/post-body-start.njk</span><br><span class="line">  #postBodyEnd: source/<span class="emphasis">_data/post-body-end.njk</span></span><br><span class="line"><span class="emphasis">  #footer: source/_</span>data/footer.njk</span><br><span class="line">  #bodyEnd: source/<span class="emphasis">_data/body-end.njk</span></span><br><span class="line"><span class="emphasis">  #variable: source/_</span>data/variables.styl</span><br><span class="line">  #mixin: source/<span class="emphasis">_data/mixins.styl</span></span><br><span class="line"><span class="emphasis">  style: source/_</span>data/styles.styl</span><br></pre></td></tr></table></figure>
+
+<h4 id="步驟二-在-Hexo-專案根目錄的-source-建立-data-資料夾並新增styles-styl-檔案"><a href="#步驟二-在-Hexo-專案根目錄的-source-建立-data-資料夾並新增styles-styl-檔案" class="headerlink" title="步驟二 在 Hexo 專案根目錄的 source 建立 _data 資料夾並新增styles.styl 檔案"></a>步驟二 在 Hexo 專案根目錄的 source 建立 _data 資料夾並新增<strong>styles.styl 檔案</strong></h4><p><img src="/nextBlog/images/style.png" alt="圖片名稱"></p>
+<h4 id="將文章中的連結樣式移除下底線並改為藍色"><a href="#將文章中的連結樣式移除下底線並改為藍色" class="headerlink" title="將文章中的連結樣式移除下底線並改為藍色"></a>將文章中的連結樣式移除下底線並改為藍色</h4><figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.post-body</span> &#123;</span><br><span class="line"> <span class="selector-tag">a</span><span class="selector-pseudo">:not</span>(.btn)&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#337AB7</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: none;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>a:not(.btn) 避免修改到首頁的閱讀全文按鈕</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+</search>

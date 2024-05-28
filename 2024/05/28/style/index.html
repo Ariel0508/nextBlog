@@ -19,23 +19,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ariel0508.github.io","root":"/nextBlog/","images":"/nextBlog/images","scheme":"Gemini","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/nextBlog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/nextBlog/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Ariel&#39;s Blog">
-<meta property="og:url" content="http://ariel0508.github.io/nextBlog/index.html">
+    <meta name="description" content="自訂Hexo樣式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自訂樣式">
+<meta property="og:url" content="http://ariel0508.github.io/nextBlog/2024/05/28/style/index.html">
 <meta property="og:site_name" content="Ariel&#39;s Blog">
+<meta property="og:description" content="自訂Hexo樣式">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://ariel0508.github.io/nextBlog/images/style.png">
+<meta property="article:published_time" content="2024-05-28T13:58:24.000Z">
+<meta property="article:modified_time" content="2024-05-28T15:09:30.740Z">
 <meta property="article:author" content="Ariel">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="NexT">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ariel0508.github.io/nextBlog/images/style.png">
 
 
-<link rel="canonical" href="http://ariel0508.github.io/nextBlog/">
+<link rel="canonical" href="http://ariel0508.github.io/nextBlog/2024/05/28/style/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://ariel0508.github.io/nextBlog/2024/05/28/style/","path":"2024/05/28/style/","title":"自訂樣式"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Ariel's Blog</title>
+<title>自訂樣式 | Ariel's Blog</title>
   
 
 
@@ -68,7 +76,7 @@
 
     <a href="/nextBlog/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Ariel's Blog</h1>
+      <p class="site-title">Ariel's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -121,7 +129,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -134,6 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F%E4%B8%80-%E5%88%B0-hexo-theme-next-config-yml-%E6%90%9C%E5%B0%8B-Custom-file-path%EF%BC%8C%E5%B0%87custom-file-path-%E7%9A%84-style-%E8%A8%BB%E8%A7%A3%E8%A7%A3%E9%96%8B"><span class="nav-number">1.</span> <span class="nav-text">步驟一 到 hexo-theme-next&#x2F;_config.yml 搜尋 Custom_file_path，將custom_file_path 的 style 註解解開</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F%E4%BA%8C-%E5%9C%A8-Hexo-%E5%B0%88%E6%A1%88%E6%A0%B9%E7%9B%AE%E9%8C%84%E7%9A%84-source-%E5%BB%BA%E7%AB%8B-data-%E8%B3%87%E6%96%99%E5%A4%BE%E4%B8%A6%E6%96%B0%E5%A2%9Estyles-styl-%E6%AA%94%E6%A1%88"><span class="nav-number">2.</span> <span class="nav-text">步驟二 在 Hexo 專案根目錄的 source 建立 _data 資料夾並新增styles.styl 檔案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%87%E6%96%87%E7%AB%A0%E4%B8%AD%E7%9A%84%E9%80%A3%E7%B5%90%E6%A8%A3%E5%BC%8F%E7%A7%BB%E9%99%A4%E4%B8%8B%E5%BA%95%E7%B7%9A%E4%B8%A6%E6%94%B9%E7%82%BA%E8%97%8D%E8%89%B2"><span class="nav-number">3.</span> <span class="nav-text">將文章中的連結樣式移除下底線並改為藍色</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -174,16 +183,17 @@
 
 
     </div>
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://ariel0508.github.io/nextBlog/2024/05/28/style/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -197,13 +207,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Ariel's Blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="自訂樣式 | Ariel's Blog">
+      <meta itemprop="description" content="自訂Hexo樣式">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/nextBlog/2024/05/28/style/" class="post-title-link" itemprop="url">自訂樣式</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          自訂樣式
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -229,23 +239,20 @@
   
 </div>
 
+            <div class="post-description">自訂Hexo樣式</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>自訂Hexo樣式</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/nextBlog/2024/05/28/style/">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+    <div class="post-body" itemprop="articleBody"><h4 id="步驟一-到-hexo-theme-next-config-yml-搜尋-Custom-file-path，將custom-file-path-的-style-註解解開"><a href="#步驟一-到-hexo-theme-next-config-yml-搜尋-Custom-file-path，將custom-file-path-的-style-註解解開" class="headerlink" title="步驟一 到 hexo-theme-next&#x2F;_config.yml 搜尋 Custom_file_path，將custom_file_path 的 style 註解解開"></a>步驟一 到 hexo-theme-next&#x2F;_config.yml 搜尋 Custom_file_path，將custom_file_path 的 style 註解解開</h4><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Define custom file paths.</span></span><br><span class="line"><span class="section"># Create your custom files in site directory `source/<span class="emphasis">_data` and uncomment needed files below.</span></span></span><br><span class="line"><span class="emphasis"><span class="section">custom_</span>file<span class="emphasis">_path:</span></span></span><br><span class="line"><span class="emphasis"><span class="section">  #head: source/_</span>data/head.njk</span></span><br><span class="line">  #header: source/<span class="emphasis">_data/header.njk</span></span><br><span class="line"><span class="emphasis">  #sidebar: source/_</span>data/sidebar.njk</span><br><span class="line">  #postMeta: source/<span class="emphasis">_data/post-meta.njk</span></span><br><span class="line"><span class="emphasis">  #postBodyStart: source/_</span>data/post-body-start.njk</span><br><span class="line">  #postBodyEnd: source/<span class="emphasis">_data/post-body-end.njk</span></span><br><span class="line"><span class="emphasis">  #footer: source/_</span>data/footer.njk</span><br><span class="line">  #bodyEnd: source/<span class="emphasis">_data/body-end.njk</span></span><br><span class="line"><span class="emphasis">  #variable: source/_</span>data/variables.styl</span><br><span class="line">  #mixin: source/<span class="emphasis">_data/mixins.styl</span></span><br><span class="line"><span class="emphasis">  style: source/_</span>data/styles.styl</span><br></pre></td></tr></table></figure>
+
+<h4 id="步驟二-在-Hexo-專案根目錄的-source-建立-data-資料夾並新增styles-styl-檔案"><a href="#步驟二-在-Hexo-專案根目錄的-source-建立-data-資料夾並新增styles-styl-檔案" class="headerlink" title="步驟二 在 Hexo 專案根目錄的 source 建立 _data 資料夾並新增styles.styl 檔案"></a>步驟二 在 Hexo 專案根目錄的 source 建立 _data 資料夾並新增<strong>styles.styl 檔案</strong></h4><p><img src="/nextBlog/images/style.png" alt="圖片名稱"></p>
+<h4 id="將文章中的連結樣式移除下底線並改為藍色"><a href="#將文章中的連結樣式移除下底線並改為藍色" class="headerlink" title="將文章中的連結樣式移除下底線並改為藍色"></a>將文章中的連結樣式移除下底線並改為藍色</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.post-body</span> &#123;</span><br><span class="line"> <span class="selector-tag">a</span><span class="selector-pseudo">:not</span>(.btn)&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#337AB7</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: none;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>a:not(.btn) 避免修改到首頁的閱讀全文按鈕</p>
+
     </div>
 
     
@@ -253,97 +260,26 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/nextBlog/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/nextBlog/tags/NexT/" rel="tag"># NexT</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://ariel0508.github.io/nextBlog/2024/05/28/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/nextBlog/images/avatar.jpg">
-      <meta itemprop="name" content="Ariel">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ariel's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Ariel's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/nextBlog/2024/05/28/hello-world/" class="post-title-link" itemprop="url">theme 主題安裝--NexT</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-      
-
-      <time title="創建時間：2024-05-28 20:00:00 / 修改時間：23:07:31" itemprop="dateCreated datePublished" datetime="2024-05-28T20:00:00+08:00">2024-05-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/nextBlog/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>如何安裝Hexo熱門主題--NexT</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/nextBlog/2024/05/28/hello-world/">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/nextBlog/2024/05/28/hello-world/" rel="prev" title="theme 主題安裝--NexT">
+                  <i class="fa fa-angle-left"></i> theme 主題安裝--NexT
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
