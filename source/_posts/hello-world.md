@@ -1,41 +1,23 @@
 ---
-title: theme 主題安裝--Next
+title: theme 主題安裝--NexT
+date: 2024-05-28 20:00:00
 tags: 
-- Next
-description: 如何安裝Hexo熱門主題--Next
+- Hexo
+- NexT
+categories: Hexo
+description: 如何安裝Hexo熱門主題--NexT
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+[hexo-theme-next](https://github.com/next-theme/hexo-theme-next)
 
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
+```bash
+npm install hexo-theme-next@latest
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+透過npm安裝next。
 
-### Run server
-
-``` bash
-$ hexo server
+```bash
+theme: next
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+到_config.yml裡搜尋theme修改成next
